@@ -4,31 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Currículo</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Seu Nome</h1>
-        <p>Engenheiro Informático | Data Scientist | Desenvolvedor</p>
+        <h1>Meu Currículo</h1>
     </header>
-
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Sou um profissional apaixonado por tecnologia e análise de dados..........</p>
-    </section>
-
-    <section>
-        <h2>Experiência</h2>
-        <ul>
-            <li>Empresa X - Desenvolvedor (2023 - Presente)</li>
-            <li>Empresa Y - Analista de Dados (2021 - 2023)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contato</h2>
-        <p>Email: seuemail@email.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/seu-perfil" target="_blank">Seu Perfil</a></p>
-    </section>
+    <nav>
+        <a href="#" onclick="showSection('sobre')">Sobre Mim</a>
+        <a href="#" onclick="showSection('academico')">Acadêmico</a>
+        <a href="#" onclick="showSection('experiencia')">Experiência</a>
+        <a href="#" onclick="showSection('hobbies')">Hobbies</a>
+        <a href="#" onclick="showSection('contato')">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="sobre" class="active">
+            <h2>Sobre Mim</h2>
+            <p>Breve descrição sobre você.</p>
+        </section>
+        <section id="academico">
+            <h2>Formação Acadêmica</h2>
+            <p>Detalhes sobre sua educação.</p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <p>Informações sobre sua experiência de trabalho.</p>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>O que você gosta de fazer no tempo livre.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Seus dados de contato.</p>
+        </section>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
