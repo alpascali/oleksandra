@@ -3,87 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #575757;
-        }
-        .container {
-            display: none;
-            padding: 20px;
-        }
-        #about {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-        }
-        #about img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        #about .text {
-            max-width: 600px;
-            text-align: left;
-        }
-    </style>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="#" onclick="showSection('about')">About Me</a>
-        <a href="#" onclick="showSection('academic')">Academic</a>
-        <a href="#" onclick="showSection('interests')">Interests</a>
-        <a href="#" onclick="showSection('hobbies')">Hobbies</a>
-    </div>
-    
-    <div id="about" class="container" style="display: flex;">
-        <img src="your-image.jpg" alt="Your Photo">
-        <div class="text">
-            <h2>About Me</h2>
-            <p>Hello! I am [Your Name], passionate about AI, Machine Learning, and Software Development. With experience in Data Science, Business Intelligence, and programming, I enjoy solving complex problems and creating innovative solutions. Currently pursuing a degree in Computer Engineering, I am eager to explore new challenges and opportunities in the tech industry.</p>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#academic">Academic Background</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Academic Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container about-container">
+            <img src="your-image.jpg" alt="My Photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi! I am [Your Name], a Computer Engineering student with a strong background in Artificial Intelligence, Machine Learning, and Data Analysis...</p>
+            </div>
         </div>
-    </div>
-    
-    <div id="academic" class="container">
-        <h2>Academic</h2>
-        <p>Details about academic background...</p>
-    </div>
-    
-    <div id="interests" class="container">
-        <h2>Interests</h2>
-        <p>Details about interests...</p>
-    </div>
-    
-    <div id="hobbies" class="container">
-        <h2>Hobbies</h2>
-        <p>Details about hobbies...</p>
-    </div>
-    
-    <script>
-        function showSection(sectionId) {
-            var sections = document.querySelectorAll('.container');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
+    </section>
+
+    <section id="academic">
+        <div class="container">
+            <h2>Academic Background</h2>
+            <p>I have studied Computer Engineering, Business Management, and Data Science, with expertise in AI, Power BI, and Software Engineering...</p>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <h2>Interests</h2>
+            <p>My interests include Data Science, Deep Learning, Software Development, and Business Intelligence...</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <p>In my free time, I enjoy reading, playing chess, hiking, and experimenting with new AI models...</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Academic Projects</h2>
+            <div class="projects-categories">
+                <button class="filter-btn" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('AI')">Artificial Intelligence</button>
+                <button class="filter-btn" onclick="filterProjects('PowerBI')">Power BI</button>
+                <button class="filter-btn" onclick="filterProjects('Other')">Other</button>
+            </div>
+            <div class="projects-list">
+                <div class="project-card AI">
+                    <h3>Neural Network Optimization</h3>
+                    <p>Research on optimizing neural networks with transfer learning.</p>
+                    <a href="projects/ai_project.pdf" target="_blank">View PDF</a>
+                </div>
+                <div class="project-card PowerBI">
+                    <h3>Business Intelligence Dashboard</h3>
+                    <p>Created a financial dashboard in Power BI for performance tracking.</p>
+                    <a href="projects/powerbi_dashboard.pdf" target="_blank">View PDF</a>
+                </div>
+                <div class="project-card Other">
+                    <h3>Software Engineering Report</h3>
+                    <p>Document covering system architecture and development process.</p>
+                    <a href="projects/software_report.docx" target="_blank">Download Report</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
