@@ -3,77 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             text-align: center;
         }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .nav {
+        .navbar {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #333;
+            padding: 10px;
         }
-        .nav a {
+        .navbar a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
         }
-        .nav a:hover {
-            background-color: #555;
+        .navbar a:hover {
+            background-color: #575757;
         }
-        .content {
-            padding: 20px;
+        .container {
             display: none;
+            padding: 20px;
         }
-        .active {
-            display: block;
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        #about .text {
+            max-width: 600px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <div class="header">My Personal Website</div>
-    <div class="nav">
-        <a href="#" onclick="showContent('about')">About Me</a>
-        <a href="#" onclick="showContent('academic')">Academic</a>
-        <a href="#" onclick="showContent('interests')">Interests</a>
-        <a href="#" onclick="showContent('hobbies')">Hobbies</a>
+    <div class="navbar">
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <a href="#" onclick="showSection('academic')">Academic</a>
+        <a href="#" onclick="showSection('interests')">Interests</a>
+        <a href="#" onclick="showSection('hobbies')">Hobbies</a>
     </div>
     
-    <div id="about" class="content active">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website! Here you can learn more about my academic journey, interests, and hobbies.</p>
+    <div id="about" class="container" style="display: flex;">
+        <img src="your-image.jpg" alt="Your Photo">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Hello! I am [Your Name], passionate about AI, Machine Learning, and Software Development. With experience in Data Science, Business Intelligence, and programming, I enjoy solving complex problems and creating innovative solutions. Currently pursuing a degree in Computer Engineering, I am eager to explore new challenges and opportunities in the tech industry.</p>
+        </div>
     </div>
     
-    <div id="academic" class="content">
+    <div id="academic" class="container">
         <h2>Academic</h2>
-        <p>I am currently pursuing a degree in Computer Engineering with a background in Business and Data Analysis.</p>
+        <p>Details about academic background...</p>
     </div>
     
-    <div id="interests" class="content">
+    <div id="interests" class="container">
         <h2>Interests</h2>
-        <p>My interests include Artificial Intelligence, Machine Learning, Data Analysis, and Software Engineering.</p>
+        <p>Details about interests...</p>
     </div>
     
-    <div id="hobbies" class="content">
+    <div id="hobbies" class="container">
         <h2>Hobbies</h2>
-        <p>In my free time, I enjoy programming, gaming, reading, and exploring new technologies.</p>
+        <p>Details about hobbies...</p>
     </div>
     
     <script>
-        function showContent(section) {
-            let contents = document.querySelectorAll('.content');
-            contents.forEach(content => content.classList.remove('active'));
-            document.getElementById(section).classList.add('active');
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.container');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </body>
