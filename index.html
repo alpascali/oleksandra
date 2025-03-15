@@ -1,32 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 20px;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Minha Página</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="header">My Personal Website</div>
+    <div class="nav">
+        <a href="#" onclick="showContent('about')">About Me</a>
+        <a href="#" onclick="showContent('academic')">Academic</a>
+        <a href="#" onclick="showContent('interests')">Interests</a>
+        <a href="#" onclick="showContent('hobbies')">Hobbies</a>
+    </div>
     
-    <main>
-        <section>
-            <h2>Seção Principal</h2>
-            <p>Conteúdo principal da página.</p>
-        </section>
-    </main>
+    <div id="about" class="content active">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! Here you can learn more about my academic journey, interests, and hobbies.</p>
+    </div>
     
-    <footer>
-        <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
-    </footer>
+    <div id="academic" class="content">
+        <h2>Academic</h2>
+        <p>I am currently pursuing a degree in Computer Engineering with a background in Business and Data Analysis.</p>
+    </div>
+    
+    <div id="interests" class="content">
+        <h2>Interests</h2>
+        <p>My interests include Artificial Intelligence, Machine Learning, Data Analysis, and Software Engineering.</p>
+    </div>
+    
+    <div id="hobbies" class="content">
+        <h2>Hobbies</h2>
+        <p>In my free time, I enjoy programming, gaming, reading, and exploring new technologies.</p>
+    </div>
+    
+    <script>
+        function showContent(section) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
 </body>
 </html>
