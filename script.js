@@ -34,3 +34,16 @@ function showPreview(fileUrl) {
         previewContainer.style.display = "none";
     }
 }
+
+// Função para filtrar os projetos por categoria
+function filterProjects(category) {
+    const allProjects = document.querySelectorAll(".project-card");
+
+    allProjects.forEach(project => {
+        if (category === "all" || project.classList.contains(category)) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+    });
+}
