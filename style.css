@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #007BFF;
+    background: #333;
+    color: white;
     padding: 15px 0;
     text-align: center;
 }
@@ -24,15 +25,48 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
 .container {
-    width: 60%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
-    text-align: center;
-    padding: 50px 0;
+    padding: 20px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-container img {
+    width: 300px; /* Define um tamanho fixo */
+    height: 400px; /* Mantém a proporção retangular */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Efeito sutil */
+}
+
+.about-text {
+    flex: 1;
+    text-align: justify; /* Justifica o texto */
+    max-width: 700px; /* Evita linhas muito longas */
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
 
 /* Ocultar todas as seções por padrão */
 section {
@@ -42,19 +76,6 @@ section {
 /* Mostrar apenas a seção ativa */
 section.active {
     display: block;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.about-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .projects-categories {
