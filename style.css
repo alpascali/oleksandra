@@ -153,13 +153,11 @@ h2 {
 }
 
 .content {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    max-width: 300px;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+    text-align: center;
+    min-height: 100px; /* Garante altura mínima para melhor visibilidade */
 }
 
 .content:hover {
@@ -195,10 +193,9 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     width: 280px;
-    text-align: center;
+    text-align: left; /* Texto alinhado à esquerda */
     font-size: 14px;
     line-height: 1.5;
-    word-wrap: break-word;
     white-space: normal;
 }
 
@@ -210,6 +207,11 @@ h2 {
 /* Se a timeline-item estiver à direita, a info aparece à direita */
 .timeline-item.right .info {
     left: 100%; /* Move a info para a direita */
+}
+
+/* Ajuste para garantir que a info sempre apareça à esquerda */
+.timeline-item .info {
+    left: -300px; /* Move todas as infos para a esquerda */
 }
 
 /* Mostrar a info ao passar o mouse */
