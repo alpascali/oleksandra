@@ -111,3 +111,27 @@ section.active {
     display: none;
     margin-top: 20px;
 }
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.degree {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.degree h3 {
+    margin: 0;
+    color: #333;
+}
+
+.degree p {
+    margin: 5px 0;
+    color: #555;
+}
+
