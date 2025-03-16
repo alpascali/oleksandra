@@ -112,81 +112,70 @@ section.active {
     margin-top: 20px;
 }
 
-/* Estilização geral da seção */
+/* Estilização da seção */
 #academic {
     padding: 50px 20px;
     background: #f4f4f4;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
     text-align: center;
 }
 
-/* Linha vertical central da timeline */
-.timeline {
-    position: relative;
-    padding: 20px 0;
+.container {
+    max-width: 1000px;
+    margin: auto;
 }
 
+/* Linha horizontal */
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 30px 0;
+}
+
+/* Linha central */
 .timeline::before {
     content: '';
     position: absolute;
-    width: 4px;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
     background: #007BFF;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    z-index: -1;
+    transform: translateY(-50%);
 }
 
 /* Itens da timeline */
 .timeline-item {
     position: relative;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Alinhamento dos itens: alternado */
-.timeline-item:nth-child(odd) {
-    text-align: right;
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    text-align: left;
-    left: 50%;
+    width: 22%;
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Bolinhas da timeline */
 .timeline-item::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: -30px;
+    left: 50%;
     width: 16px;
     height: 16px;
     background: white;
     border: 4px solid #007BFF;
     border-radius: 50%;
-    left: calc(100% + 10px);
-    transform: translateY(-50%);
+    transform: translateX(-50%);
 }
 
-.timeline-item:nth-child(even)::before {
-    left: -18px;
-}
-
-/* Estilo dos cartões */
+/* Cartões da timeline */
 .timeline-content {
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    text-align: left;
-    max-width: 300px;
+    text-align: center;
 }
 
 .timeline-content h3 {
