@@ -112,7 +112,7 @@ section.active {
     margin-top: 20px;
 }
 
-/* Estilização geral */
+/* Estilização Geral */
 #academic {
     padding: 40px 20px;
     background: #f4f4f4;
@@ -130,16 +130,30 @@ section.active {
     padding: 20px 0;
 }
 
-/* Linha central da timeline */
+/* Linha central com anos */
 .timeline::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
-    width: 3px;
+    width: 4px;
     height: 100%;
-    background: #007BFF;
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
     transform: translateX(-50%);
+}
+
+/* Exibir os anos ao longo da linha */
+.timeline-year {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
 }
 
 /* Itens da timeline */
@@ -147,7 +161,6 @@ section.active {
     position: relative;
     width: 50%;
     padding: 15px;
-    text-align: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,44 +177,23 @@ section.active {
     left: 50%;
 }
 
-/* Substituindo os círculos pelos anos */
-.timeline-item::before {
-    content: attr(data-year); /* Mostra o ano */
-    position: absolute;
-    top: 20px;
-    right: -40px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #007BFF;
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #007BFF;
-}
-
-.timeline-item:nth-child(even)::before {
-    left: -40px;
-    right: auto;
-}
-
-/* Estilização dos cartões */
+/* Ajuste do tamanho das boxes conforme a duração */
 .timeline-content {
     background: white;
     padding: 12px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 350px; /* Tamanho mais compacto */
-    min-height: 150px; /* Altura reduzida */
-    word-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    word-wrap: break-word;
 }
 
-.timeline-content h3 {
-    color: #007BFF;
-    margin-bottom: 5px;
-    font-size: 18px;
+/* Tamanhos das boxes conforme a duração do curso */
+.short-course { width: 120px; } /* 2 anos */
+.medium-course { width: 180px; } /* 3 anos */
+.long-course { width: 240px; } /* 4 anos */
+
 }
 
