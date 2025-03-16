@@ -21,4 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
             pdfPreview.style.display = "none";
         }
     });
+
+    // Ensure profile image is loaded from the correct folder
+    const profileImage = document.querySelector("#about img");
+    if (profileImage) {
+        profileImage.src = "images/sky.jpg";
+    }
 });
