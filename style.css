@@ -157,7 +157,14 @@ h2 {
     justify-content: center;  /* Centraliza horizontalmente */
     align-items: center;  /* Centraliza verticalmente */
     text-align: center;
-    min-height: 100px; /* Garante altura mínima para melhor visibilidade */
+    min-height: 100px; /* Garante altura mínima */
+    background: #fff; /* Fundo branco para destacar */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    border: 2px solid #007bff; /* Borda azul */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .content:hover {
