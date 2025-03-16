@@ -157,6 +157,7 @@ h2 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     transition: transform 0.3s ease-in-out;
+    max-width: 300px;
 }
 
 .content:hover {
@@ -182,22 +183,27 @@ h2 {
     left: -50px;
 }
 
+/* Ajustes na info */
 .info {
     display: none;
     background: #fff;
-    padding: 10px;
+    padding: 15px; /* Aumentei o padding para melhor espaçamento */
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    width: 250px; /* Aumentei a largura */
     text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: nowrap; /* Mantém tudo em uma única linha */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+/* Melhor visualização da info ao passar o mouse */
 .content:hover .info {
     display: block;
 }
-
-
