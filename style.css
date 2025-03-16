@@ -112,26 +112,35 @@ section.active {
     margin-top: 20px;
 }
 
-.education {
-    display: flex;
-    flex-direction: column;
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
-.degree {
-    background: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.degree-card {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.degree h3 {
-    margin: 0;
-    color: #333;
+.degree-card:hover {
+    transform: scale(1.05);
 }
 
-.degree p {
+.degree-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.degree-card p {
     margin: 5px 0;
-    color: #555;
+    font-size: 16px;
 }
+
 
