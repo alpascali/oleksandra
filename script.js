@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Adiciona evento de clique nos links do menu
     navLinks.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita scroll automático
+            event.preventDefault(); // Evita o scroll automático
 
             const targetId = this.getAttribute("href").substring(1); // Remove '#'
             
@@ -21,17 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Função para exibir preview de arquivos PDF e Power BI
+function showPreview(fileUrl) {
+    const previewFrame = document.getElementById("file-frame");
+    const previewContainer = document.getElementById("file-preview");
 
-    // Hide preview when clicking outside
-    pdfPreview.addEventListener("click", function (event) {
-        if (event.target === pdfPreview) {
-            pdfPreview.style.display = "none";
-        }
-    });
-
-    // Ensure profile image is loaded from the correct folder
-    const profileImage = document.querySelector("#about img");
-    if (profileImage) {
-        profileImage.src = "images/sky.jpg";
+    if (fileUrl.endsWith(".pdf")) {
+        previewFrame.src = fileUrl;
+        previewContainer.style.display = "block";
+    } else if (fileUrl.endsWith(".pbix")) {
+        alert("Power BI files cannot be previewed directly in the browser. Please download the file.");
+        previewContainer.style.display = "none";
     }
-});
+}
