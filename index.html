@@ -53,32 +53,48 @@
     </section>
 
     <section id="projects">
-        <div class="container">
-            <h2>Academic Projects</h2>
-            <div class="projects-categories">
-                <button class="filter-btn" onclick="filterProjects('all')">All</button>
-                <button class="filter-btn" onclick="filterProjects('AI')">Statistics</button>
-                <button class="filter-btn" onclick="filterProjects('PowerBI')">Power BI</button>
-                <button class="filter-btn" onclick="filterProjects('Other')">Other</button>
+    <div class="container">
+        <h2>Academic Projects</h2>
+        <div class="projects-categories">
+            <button class="filter-btn" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('AI')">Statistics</button>
+            <button class="filter-btn" onclick="filterProjects('PowerBI')">Power BI</button>
+            <button class="filter-btn" onclick="filterProjects('Other')">Other</button>
+        </div>
+
+        <div class="projects-list">
+            <div class="project-card AI" onclick="showPreview('files/Metodos_Quantitativos_em_Criptomoedas.pdf')">
+                <h3>Quantitative Methods in Cryptocurrencies</h3>
+                <p>Research on optimizing neural networks with transfer learning.</p>
             </div>
 
-            <div class="projects-list">
-                <div class="project-card AI" onclick="showPreview('files/Metodos_Quantitativos_em_Criptomoedas.pdf')">
-                    <h3>Quantitative Methods in Cryptocurrencies</h3>
-                    <p>Research on optimizing neural networks with transfer learning.</p>
-                </div>
-
-                <div class="project-card PowerBI" onclick="showPreview('files/SI_TP.pbix')">
-                    <h3>DataWare</h3>
-                    <p>Research on data warehousing techniques.</p>
-                </div>
+            <div class="project-card PowerBI" onclick="showPreview('files/SI_TP.pbix')">
+                <h3>DataWare</h3>
+                <p>Research on data warehousing techniques.</p>
             </div>
 
-            <div class="file-preview" id="file-preview">
-                <iframe id="file-frame" src="" width="100%" height="500px"></iframe>
+            <div class="project-card AI" onclick="showPreview('files/Deep_Learning_Optimization.pdf')">
+                <h3>Deep Learning Optimization</h3>
+                <p>Exploring hyperparameter tuning with Random Search.</p>
+            </div>
+
+            <div class="project-card PowerBI" onclick="showPreview('files/Financial_Analysis.pbix')">
+                <h3>Financial Analysis Dashboard</h3>
+                <p>Analyzing financial data with interactive visualizations.</p>
+            </div>
+
+            <div class="project-card Other" onclick="showPreview('files/Web_Development_Project.pdf')">
+                <h3>Web Development Project</h3>
+                <p>Building a responsive web application using modern frameworks.</p>
             </div>
         </div>
-    </section>
+
+        <div class="file-preview" id="file-preview">
+            <iframe id="file-frame" src="" width="100%" height="500px"></iframe>
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
