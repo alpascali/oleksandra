@@ -1,19 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const projectLinks = document.querySelectorAll(".project-card a");
-    const pdfPreview = document.createElement("div");
-    pdfPreview.classList.add("pdf-preview");
-    pdfPreview.innerHTML = '<iframe id="pdf-frame" width="100%" height="500px" style="border: none;"></iframe>';
-    document.body.appendChild(pdfPreview);
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
 
-    projectLinks.forEach(link => {
+    // Mostra apenas a seção "About Me" no início
+    document.getElementById("about").classList.add("active");
+
+    // Adiciona evento de clique nos links do menu
+    navLinks.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const pdfUrl = this.getAttribute("href");
-            document.getElementById("pdf-frame").src = pdfUrl;
-            pdfPreview.style.display = "block";
-            window.scrollTo({ top: pdfPreview.offsetTop, behavior: "smooth" });
+            event.preventDefault(); // Evita scroll automático
+
+            const targetId = this.getAttribute("href").substring(1); // Remove '#'
+            
+            // Oculta todas as seções
+            sections.forEach(section => section.classList.remove("active"));
+
+            // Mostra a seção correspondente ao link clicado
+            document.getElementById(targetId).classList.add("active");
         });
     });
+});
+
 
     // Hide preview when clicking outside
     pdfPreview.addEventListener("click", function (event) {
