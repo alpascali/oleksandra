@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: white;
+    background: linear-gradient(to top, #f4dfd4, #32485c);
 }
 
 .top-bar {
-  background-color: #263849;
+  background-color: white;
   color: white;
   padding: 10px 0;
   text-align: center;
