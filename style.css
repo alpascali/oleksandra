@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to top, #f4dfd4, #32485c);
+    background: white;
 }
 
 .top-bar {
@@ -38,7 +38,7 @@ nav ul li {
 
 nav ul li a {
     color: black;
-    font-size: 24px; 
+    font-size: 20px; 
     text-transform: uppercase; 
     font-weight: bold;
     text-decoration: none;
