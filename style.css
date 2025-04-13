@@ -6,11 +6,9 @@ body {
 }
 
 header {
-    background: rgba(51, 51, 51, 0); /* Fundo transparente */
-    color: black; /* Texto preto */
+    background: rgba(51, 51, 51, 0);
     padding: 15px 0;
     text-align: center;
-    font-size: 18px; /* Tamanho da letra */
 }
 
 nav ul {
