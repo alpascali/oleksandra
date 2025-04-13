@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: darkgray;
+    background: #354;
     color: black;
     padding: 15px 0;
     text-align: center;
@@ -24,9 +24,9 @@ nav ul li {
 
 nav ul li a {
     color: black;
-    font-size: 24px; /* Tamanho da letra ajustado */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 24px; 
+    text-transform: uppercase; 
+    font-weight: bold;
     text-decoration: none;
 }
 
