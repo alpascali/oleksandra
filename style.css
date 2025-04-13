@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: rgba(51, 51, 51, 0);
+    background: darkgray;
     color: black;
     padding: 15px 0;
     text-align: center;
