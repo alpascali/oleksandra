@@ -13,7 +13,7 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #32485c;
   text-transform: uppercase; 
   font-weight: bold;
   text-decoration: none;
@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #32485c; /* Cor para quando o link estiver em hover */
+    color: #32485c;
 }
 
 .container {
@@ -64,11 +64,11 @@ nav ul li a:hover {
 }
 
 .about-container img {
-    width: 300px; /* Define um tamanho fixo */
-    height: 400px; /* Mantém a proporção retangular */
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
-    border-radius: 10px; /* Bordas levemente arredondadas */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Efeito sutil */
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .about-text {
