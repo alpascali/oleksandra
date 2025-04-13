@@ -24,8 +24,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black; /* Defina a cor preta para os links */
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Cor para quando o link estiver em hover */
 }
 
 .container {
