@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to top, #f4dfd4, #32485c);
+    background: white;
 }
 
 .top-bar {
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to top, #f4dfd4, #32485c);
+    background: linear-gradient(to top, f1d6d6, 4d2424);
     color: black;
     padding: 15px 0;
     text-align: center;
