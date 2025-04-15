@@ -313,7 +313,7 @@ h2 {
 
 /*INTERESTS*/
 #skills-interests {
-    margin: 40px 0;
+    margin: 30px 0;
     padding: 15px;
     background-color: #f9f9f9;
 }
@@ -366,7 +366,7 @@ h3 {
     display: none;
     position: absolute;
     top: 0;
-    left: 105%; /* Position to the right of the main interest, close to the item */
+    left: 90%; /* Position to the right of the main interest, close to the item */
     margin-left: 2px; 
     background-color: #f1f1f1;
     padding: 10px;
