@@ -312,8 +312,22 @@ h2 {
 }
 
 /*INTERESTS*/
-#interests {
+#interests, #technical-skills {
     margin: 40px 0;
+}
+
+#technical-skills {
+    background-color: #f4f4f4; /* Slightly different background color */
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    font-size: 16px;
+    margin: 5px 0;
 }
 
 .accordion-container {
