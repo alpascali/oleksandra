@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 .container {
     width: 90%;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
     padding: 20px;
 }
@@ -114,7 +114,7 @@ section.active {
 }
 
 .filter-btn:hover {
-    background-color: #0056b3;
+    background-color: #874e4c;
 }
 
 .projects-list {
