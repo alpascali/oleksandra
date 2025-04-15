@@ -367,7 +367,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 105%; /* Position to the right of the main interest, close to the item */
-    margin-left: 5px; /* Reduced space between the item and subtopics */
+    margin-left: 2px; 
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 8px;
