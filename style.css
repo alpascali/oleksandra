@@ -242,7 +242,7 @@ h2 {
     transform: translateY(-50%);
     width: 280px;
     text-align: left; /* Texto alinhado à esquerda */
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     white-space: normal;
 }
