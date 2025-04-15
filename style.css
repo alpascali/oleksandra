@@ -334,7 +334,7 @@ h2 {
     flex: 1;
 }
 
-h3 {
+h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -356,7 +356,7 @@ h3 {
     transform: translateY(-5px);
 }
 
-.interest-item h4 {
+.interest-item h3 {
     font-size: 20px;
     font-weight: bold;
     color: #007bff;
@@ -366,8 +366,8 @@ h3 {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%; /* Position to the right of the main interest */
-    margin-left: 20px; /* Add some space between the item and subtopics */
+    left: 105%; /* Position to the right of the main interest, close to the item */
+    margin-left: 10px; /* Reduced space between the item and subtopics */
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 8px;
@@ -409,7 +409,7 @@ h3 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.technical-skills h3 {
+.technical-skills h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
