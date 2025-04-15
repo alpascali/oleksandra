@@ -366,7 +366,7 @@ h3 {
     display: none;
     position: absolute;
     top: 0;
-    left: 90%; /* Position to the right of the main interest, close to the item */
+    left: 30%; /* Position to the right of the main interest, close to the item */
     margin-left: 2px; 
     background-color: #f1f1f1;
     padding: 10px;
