@@ -311,3 +311,27 @@ h2 {
     opacity: 1;
 }
 
+/*INTERESTS*/
+#interests {
+    margin: 40px 0;
+}
+
+.interests-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests-list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.interests-list li > strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.interests-list li ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
