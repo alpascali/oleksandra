@@ -49,9 +49,9 @@ function filterProjects(category) {
 }
 
 //INTERESTS
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const item = header.parentElement;
+document.querySelectorAll('.expand-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.parentElement;
         item.classList.toggle('active');
     });
 });
