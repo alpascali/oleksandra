@@ -316,22 +316,43 @@ h2 {
     margin: 40px 0;
 }
 
-.interests-list ul {
-    list-style-type: none;
-    padding: 0;
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.interests-list li {
+.accordion-item {
     margin: 10px 0;
-    font-size: 16px;
 }
 
-.interests-list li > strong {
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
     font-size: 18px;
-    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.interests-list li ul {
-    margin-left: 20px;
-    list-style-type: disc;
+.accordion-header:hover {
+    background-color: #444;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.accordion-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
 }
