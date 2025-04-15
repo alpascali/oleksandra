@@ -49,14 +49,3 @@ function filterProjects(category) {
 }
 
 //INTERESTS
-document.querySelectorAll('.accordion-title').forEach(item => {
-    item.addEventListener('click', () => {
-        // Close any open accordion content
-        const activeItem = document.querySelector('.accordion-item.active');
-        if (activeItem && activeItem !== item.parentElement) {
-            activeItem.classList.remove('active');
-        }
-        // Toggle the clicked accordion item
-        item.parentElement.classList.toggle('active');
-    });
-});
