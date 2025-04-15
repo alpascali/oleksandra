@@ -364,8 +364,16 @@ h2 {
 
 .sub-interests {
     display: none;
-    margin-top: 10px;
-    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position to the right of the main interest */
+    margin-left: 20px; /* Add some space between the item and subtopics */
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Adjust the width of the subtopics box */
+    z-index: 10;
 }
 
 .interest-item:hover .sub-interests {
