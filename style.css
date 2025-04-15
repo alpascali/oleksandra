@@ -313,13 +313,13 @@ h2 {
 
 /*INTERESTS*/
 #interests {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .interests-cards {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 15px;
 }
 
 .card {
