@@ -316,43 +316,34 @@ h2 {
     margin: 40px 0;
 }
 
-.accordion {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+.interests-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
 }
 
-.accordion-item {
-    margin: 10px 0;
+.card {
+    flex: 0 0 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.accordion-header {
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
-    text-align: left;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.accordion-header:hover {
-    background-color: #444;
+.card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.accordion-content {
-    padding: 10px;
-    background-color: #f1f1f1;
-    display: none;
-}
-
-.accordion-content ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-.accordion-item.active .accordion-content {
-    display: block;
+.card p {
+    font-size: 16px;
+    color: #666;
 }
