@@ -312,68 +312,98 @@ h2 {
 }
 
 /*INTERESTS*/
-#interests, #technical-skills {
+#skills-interests {
     margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-#technical-skills {
-    background-color: #f4f4f4; /* Slightly different background color */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.interest-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+}
+
+.interest-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sub-interests {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.interest-item:hover .sub-interests {
+    display: block;
+}
+
+.sub-interests ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-interests li {
+    font-size: 16px;
+    color: #555;
 }
 
 .skills-list {
-    list-style: none;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .skills-list li {
     font-size: 16px;
-    margin: 5px 0;
+    color: #555;
+    margin-bottom: 10px;
 }
 
-.accordion-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.accordion-item {
-    background-color: #f1f1f1;
+.technical-skills {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    margin: 10px 0;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.accordion-title {
-    padding: 15px;
-    font-size: 18px;
+.technical-skills h2 {
+    font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 8px;
-    text-align: center;
-    margin: 0;
-}
-
-.accordion-title:hover {
-    background-color: #45a049;
-}
-
-.accordion-content {
-    padding: 0 15px;
-    display: none;
-    opacity: 0;
-    background-color: #e2e2e2;
-    border-radius: 8px;
-    transition: opacity 0.3s ease;
-}
-
-.accordion-item:hover .accordion-content {
-    display: block;
-    opacity: 1;
-}
-
-.accordion-content ul {
-    list-style: none;
-    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #333;
 }
