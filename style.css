@@ -354,7 +354,7 @@ h2 {
 }
 
 #skills-interests h4 {
-    margin: 100px 0;
+    margin: 10px 0;
     font-size: 18px;
     cursor: pointer;
     position: relative;
@@ -369,12 +369,12 @@ h2 {
 
 .sub-interests {
     position: absolute;
-    left: 220px;
+    left: -220px;
     top: 0;
     width: 200px;
     background: #ffffff;
     border: 1px solid #ccc;
-    padding: 10px 15px;
+    padding: 20px 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: none;
     z-index: 10;
