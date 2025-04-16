@@ -331,7 +331,7 @@ h2 {
 
 #skills-interests .column.interests {
     margin-left: 0;
-    margin-right: 10px; 
+    margin-right: 30px; /* aumentas aqui para puxar mais à esquerda */
 }
 
 #skills-interests .column.technical-skills {
@@ -397,7 +397,7 @@ h2 {
 
 /* Section for Technical Skills */
 .technical-skills {
-    padding-top: 200px;
+    padding-top: 20px;
 }
 
 .skills-grid {
