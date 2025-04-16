@@ -374,7 +374,7 @@ h2 {
     width: 200px;
     background: #ffffff;
     border: 1px solid #ccc;
-    padding: 20px 15px;
+    padding: 15px 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: none;
     z-index: 10;
@@ -424,8 +424,8 @@ h2 {
 }
 
 .skill-item img {
-    width: 80px; /* Increased icon size */
-    height: 80px;
+    width: 75px; /* Increased icon size */
+    height: 75px;
     margin-bottom: 10px;
 }
 
