@@ -313,7 +313,7 @@ h2 {
 
 /*INTERESTS*/
 #skills-interests {
-    padding: 30px 0 10px;
+    padding: 70px 0 10px;
 }
 
 #skills-interests .container {
@@ -325,8 +325,8 @@ h2 {
 #skills-interests .row {
     display: flex;
     justify-content: space-between;
-    gap: 90px;
-    padding: 0 40px; /* mantém respiro externo */
+    gap: 40px;
+    padding: 0 40px; 
 }
 
 #skills-interests .column.interests {
