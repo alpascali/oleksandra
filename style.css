@@ -326,12 +326,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    padding: 0 40px; 
+    padding: 0 0px; /* <-- remove o padding lateral */
 }
 
 #skills-interests .column.interests {
-    margin-left: 0;
-    margin-right: 30px; /* aumentas aqui para puxar mais à esquerda */
+    margin-left: 0;          /* Garante que ela fique encostada à esquerda */
+    margin-right: 20px;      /* Pequeno espaçamento à direita, se quiser */
 }
 
 #skills-interests .column.technical-skills {
