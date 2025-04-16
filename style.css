@@ -313,71 +313,71 @@ h2 {
 
 /*INTERESTS*/
 #skills-interests {
-    margin: 15px 0;
-    padding: 5px 30px;
-    background-color: #f9f9f9;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .row {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .column {
     flex: 1;
+    min-width: 250px;
+    max-width: 350px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #1c1c1c;
+    text-align: center;
 }
 
 .interest-item {
-    background-color: #fff;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    cursor: default;
+    transition: box-shadow 0.3s ease;
 }
 
 .interest-item:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .interest-item h4 {
     font-size: 18px;
-    font-weight: bold;
-    color: #7b0c35;
+    color: #2a2a2a;
+    margin: 0;
 }
 
 .sub-interests {
     display: none;
     position: absolute;
-    top: 0;
-    left: 50%; /* Position to the right of the main interest, close to the item */
-    margin-left: 2px; 
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 200px; /* Adjust the width of the subtopics box */
+    top: 100%;
+    left: 10px;
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     z-index: 10;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .interest-item:hover .sub-interests {
     display: block;
+    opacity: 1;
 }
 
 .sub-interests ul {
@@ -388,30 +388,11 @@ h3 {
 
 .sub-interests li {
     font-size: 14px;
-    color: #555;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.skills-list li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.technical-skills {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.technical-skills h3 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
     color: #333;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sub-interests li:last-child {
+    border-bottom: none;
 }
