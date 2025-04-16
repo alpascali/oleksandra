@@ -397,13 +397,13 @@ h2 {
 
 /* Section for Technical Skills */
 .technical-skills {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 items per row */
-    gap: 20px; /* Space between items */
+    gap: 10px; /* Space between items */
     width: 10%;
 }
 
