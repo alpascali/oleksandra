@@ -313,14 +313,14 @@ h2 {
 
 /*INTERESTS*/
 #skills-interests {
-    margin: 20px 0;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
 }
 
