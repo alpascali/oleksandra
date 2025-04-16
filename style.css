@@ -326,6 +326,15 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding: 0 60px; /* Adiciona espaço nas laterais para empurrar os blocos */
+}
+
+#skills-interests .column.interests {
+    margin-right: auto; /* Empurra para a esquerda */
+}
+
+#skills-interests .column.technical-skills {
+    margin-left: auto; /* Empurra para a direita */
 }
 
 #skills-interests .column {
