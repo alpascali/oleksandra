@@ -384,15 +384,43 @@ h2 {
     font-size: 14px;
 }
 
-.technical-skills .skills-list {
-    list-style: none;
-    padding-left: 0;
+/* Section for Technical Skills */
+.technical-skills {
+    padding-top: 20px;
 }
 
-.technical-skills .skills-list li {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 blocks per row */
+    gap: 20px; /* Space between blocks */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}
+
+.skill-item img {
+    width: 50px; /* Icon size */
+    height: 50px;
     margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 1.5;
+}
+
+.skill-item p {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
 }
 
 /* Alinhamento interno extra opcional */
