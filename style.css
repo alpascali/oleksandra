@@ -326,15 +326,17 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    padding: 0 90px; 
+    padding: 0 40px; /* mantém respiro externo */
 }
 
 #skills-interests .column.interests {
-    margin-right: auto; /* Empurra para a esquerda */
+    margin-left: 0;
+    margin-right: 40px; /* empurra para a esquerda */
 }
 
 #skills-interests .column.technical-skills {
-    margin-left: auto; /* Empurra para a direita */
+    margin-left: 40px; /* empurra para a direita */
+    margin-right: 0;
 }
 
 #skills-interests .column {
