@@ -358,7 +358,7 @@ h2 {
 
 .sub-interests {
     position: absolute;
-    left: -220px;
+    left: 220px;
     top: 0;
     width: 200px;
     background: #ffffff;
