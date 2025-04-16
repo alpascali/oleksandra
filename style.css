@@ -325,7 +325,7 @@ h2 {
 #skills-interests .row {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 90px;
     padding: 0 40px; /* mantém respiro externo */
 }
 
