@@ -391,9 +391,9 @@ h2 {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 blocks per row */
-    gap: 20px; /* Space between blocks */
-    width: 100%; /* Ensure the grid takes full width */
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    gap: 20px; /* Space between items */
+    width: 100%;
 }
 
 .skill-item {
@@ -401,7 +401,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 25px; /* Increased padding to make the blocks wider */
+    padding: 25px; /* Increased padding for wider boxes */
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -413,8 +413,8 @@ h2 {
 }
 
 .skill-item img {
-    width: 60px; /* Increased icon size */
-    height: 60px;
+    width: 80px; /* Increased icon size */
+    height: 80px;
     margin-bottom: 10px;
 }
 
@@ -422,11 +422,6 @@ h2 {
     font-size: 14px;
     margin: 0;
     color: #333;
-}
-
-/* Alinhamento interno extra opcional */
-.column h3, .column ul, .column li {
-    text-align: left;
 }
 
 /* Alinhamento interno extra opcional */
