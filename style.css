@@ -404,7 +404,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 items per row */
     gap: 20px; /* Space between items */
-    width: 100%;
+    width: 10%;
 }
 
 .skill-item {
