@@ -369,7 +369,7 @@ h2 {
 
 .sub-interests {
     position: absolute;
-    left: -220px;
+    left: 220px;
     top: 0;
     width: 200px;
     background: #ffffff;
@@ -392,7 +392,7 @@ h2 {
 
 .sub-interests li {
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Section for Technical Skills */
