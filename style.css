@@ -331,7 +331,7 @@ h2 {
 
 #skills-interests .column.interests {
     margin-left: 0;          /* Garante que ela fique encostada à esquerda */
-    margin-right: 20px;      /* Pequeno espaçamento à direita, se quiser */
+    margin-right: 10px;      /* Pequeno espaçamento à direita, se quiser */
 }
 
 #skills-interests .column.technical-skills {
