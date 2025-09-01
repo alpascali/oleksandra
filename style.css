@@ -300,7 +300,7 @@ section {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
+    gap: 19px;
 }
 
 /* Skill items com tooltip animado e glow */
