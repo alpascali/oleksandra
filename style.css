@@ -303,7 +303,9 @@ section {
     gap: 12px;
 }
 
+/* Skill items com tooltip animado e glow */
 .skill-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,6 +313,35 @@ section {
     border-radius: 12px;
     background-color: rgba(255,255,255,0.2);
     transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+/* Tooltip animado */
+.skill-item::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+/* Glow animado no hover */
+.skill-item:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+    box-shadow: 0 0 15px #6a11cb, 0 0 25px #2575fc;
 }
 
 .skill-item:hover {
