@@ -1,22 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const navLinks = document.querySelectorAll(".sidebar-nav ul li a");
 
-    // Mostra apenas a seção "About Me" no início
-    document.getElementById("about").classList.add("active");
-
-    // Adiciona evento de clique nos links do menu
+    // Scroll suave para links do menu
     navLinks.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita o scroll automático
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
 
-            const targetId = this.getAttribute("href").substring(1); // Remove '#'
-            
-            // Oculta todas as seções
-            sections.forEach(section => section.classList.remove("active"));
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        });
+    });
 
-            // Mostra a seção correspondente ao link clicado
-            document.getElementById(targetId).classList.add("active");
+    // Destacar item ativo conforme scroll
+    window.addEventListener("scroll", function () {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100; // Ajuste para topo fixo
+            if (pageYOffset >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) === current) {
+                link.classList.add("active");
+            }
         });
     });
 });
@@ -48,4 +59,13 @@ function filterProjects(category) {
     });
 }
 
-//INTERESTS
+// Exemplo de toggle para Interests (opcional)
+const interestItems = document.querySelectorAll(".interest-item");
+interestItems.forEach(item => {
+    item.addEventListener("click", function () {
+        const sub = this.querySelector(".sub-interests");
+        if (sub) {
+            sub.style.display = sub.style.display === "block" ? "none" : "block";
+        }
+    });
+});
