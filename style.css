@@ -301,7 +301,7 @@ section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 12px; /* espaço horizontal entre logotipos */
-    row-gap: 50px;    /* espaço vertical entre linhas */
+    row-gap: 30px;    /* espaço vertical entre linhas */
 }
 
 /* Skill items com tooltip animado e glow */
